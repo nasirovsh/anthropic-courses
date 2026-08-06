@@ -1,5 +1,6 @@
 {
     "airun.settings": {
         "workspaceId": "d6239fbb-aa42-4734-9894-f589f9fe23a4"
-    }
+    },
+    "python.defaultInterpreterPath": "${workspaceFolder}/mcp-intro/cli_project/.venv/bin/python"
 }
