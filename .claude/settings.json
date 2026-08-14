@@ -5,7 +5,8 @@
       "Bash(./venv/bin/pip install *)",
       "Bash(./venv/bin/python -m ipykernel install --user --name=claude-api-venv --display-name \"claude-api \\(venv\\)\")",
       "Bash(./.venv/bin/python -m ipykernel install --user --name=claude-api-venv --display-name \"claude-api \\(.venv\\)\")",
-      "Bash(jupyter kernelspec *)"
+      "Bash(jupyter kernelspec *)",
+      "Bash(python3 -c ' *)"
     ]
   }
 }
