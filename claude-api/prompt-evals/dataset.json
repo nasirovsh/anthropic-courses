@@ -1,11 +1,14 @@
 [
   {
-    "task": "Write a Python function that extracts the AWS account ID from an ARN string like 'arn:aws:s3:::my-bucket/key'"
+    "task": "Parse an AWS S3 bucket name from an S3 URI (s3://bucket-name/key/path) using a regular expression",
+    "format": "regex"
   },
   {
-    "task": "Create a JSON object that represents an IAM policy allowing read-only access to a specific S3 bucket named 'my-data-bucket'"
+    "task": "Create a JSON CloudFormation template for an AWS Lambda function that prints 'Hello World'",
+    "format": "json"
   },
   {
-    "task": "Write a regular expression that matches valid AWS EC2 instance IDs (format: i- followed by 17 alphanumeric characters)"
+    "task": "Write a Python function that extracts the region and account ID from an AWS ARN string",
+    "format": "python"
   }
 ]
