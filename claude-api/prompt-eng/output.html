@@ -117,7 +117,7 @@
                 </div>
                 <div class="stat-box">
                     <div>Average Score</div>
-                    <div class="stat-value">8.0 / 10</div>
+                    <div class="stat-value">8.3 / 10</div>
                 </div>
                 <div class="stat-box">
                     <div>Pass Rate (≥7)</div>
@@ -140,30 +140,115 @@
             <tbody>
     
             <tr>
-                <td>Testing with a multi-paragraph narrative passage containing multiple characters and plot points to verify the prompt can distill complex storytelling into one essential sentence</td>
-                <td class="prompt-inputs"><strong>passage:</strong> Maya had always dreamed of opening her own bookstore, but years of working corporate jobs left her exhausted and unfulfilled. One autumn, she finally took the leap, converting an old warehouse into a cozy reading space filled with vintage shelves and warm lighting. Her childhood friend James, a graphic designer, offered to help rebrand her vision, creating a logo that captured the magic of discovery. Within months, the bookstore became a community hub where locals gathered for author readings, book clubs, and quiet afternoons lost in stories. Though the first year was financially challenging and required countless sleepless nights of inventory management and marketing, Maya's perseverance paid off when a local newspaper featured her shop as 'the heart of the neighborhood.' By year two, the bookstore was thriving, and Maya finally felt the sense of purpose that had eluded her in her previous career.</td>
-                <td class="criteria">• Captures the main arc: Maya's transition from corporate work to opening a successful bookstore<br>• Expressed as a single, concise sentence<br>• Distills the essential narrative without losing the core story progression<br>• Omits secondary details like James's role, specific challenges, or timeline specifics</td>
-                <td class="output"><pre>Maya fulfilled her long-held dream of opening a bookstore that became a thriving community hub, finally finding the purpose her corporate career never provided.</pre></td>
-                <td class="score-col"><span class="score score-high">10</span></td>
-                <td class="reasoning">The solution meets all mandatory requirements with precision. It is a single sentence that captures Maya's transition from corporate work to opening a successful bookstore. It distills the essential narrative arc (unfulfilled corporate worker → takes leap → builds thriving community space → finds purpose) without unnecessary details. The sentence is concise, clear, and maintains the core story progression. The solution demonstrates excellent judgment in what to include and exclude, making it an exemplary summary that fulfills the task completely.</td>
+                <td>Testing with a strength-training athlete requiring high protein intake and specific macronutrient ratios for muscle recovery</td>
+                <td class="prompt-inputs"><strong>height:</strong> 180 cm<br><strong>weight:</strong> 85 kg<br><strong>goal:</strong> muscle gain with strength training<br><strong>restrictions:</strong> none</td>
+                <td class="criteria">• Meal plan covers all meals for one day (breakfast, lunch, dinner, and snacks)<br>• Provides high protein intake (minimum 1.6g per kg of body weight)<br>• Includes specific foods with approximate macronutrient composition for each meal<br>• Plan is compact and concise (suitable for quick reference)</td>
+                <td class="output"><pre># One-Day Meal Plan for Muscle Gain & Strength Training
+
+Here is a one-day meal plan for an athlete aiming to build muscle with strength training:
+
+* **Calorie Target:** Approximately 3,200 calories
+* **Macronutrient Breakdown:** Protein (200g), Fat (100g), Carbs (380g)
+
+**Meal Plan:**
+
+* **Breakfast (7:00 AM):** Scrambled eggs (3 large eggs, 150g) with whole wheat toast (80g) and butter (10g). Orange juice (250ml).
+  * Protein: 25g, Fat: 18g, Carbs: 40g
+
+* **Mid-Morning Snack (10:00 AM):** Banana (150g) with peanut butter (32g) and whole milk (240ml).
+  * Protein: 16g, Fat: 16g, Carbs: 50g
+
+* **Lunch (1:00 PM):** Grilled chicken breast (180g) with brown rice (120g dry weight) and steamed broccoli (200g). Olive oil drizzle (15ml).
+  * Protein: 52g, Fat: 12g, Carbs: 75g
+
+* **Pre-Workout Snack (3:30 PM):** Rice cakes (60g) with honey (25g) and whey protein powder (30g mixed with water).
+  * Protein: 25g, Fat: 1g, Carbs: 50g
+
+* **Dinner (7:00 PM):** Lean ground beef (200g) with sweet potato (250g) and mixed vegetables sautéed in olive oil (15ml): bell peppers (100g), zucchini (100g).
+  * Protein: 50g, Fat: 20g, Carbs: 85g
+
+* **Evening Snack (9:30 PM):** Greek yogurt (200g, full-fat) with granola (40g).
+  * Protein: 20g, Fat: 12g, Carbs: 40g
+
+This meal plan emphasizes high-quality protein sources, complex carbohydrates for sustained energy, and healthy fats to support muscle growth, hormone production, and recovery during strength training.</pre></td>
+                <td class="score-col"><span class="score score-high">9</span></td>
+                <td class="reasoning">The solution comprehensively satisfies all mandatory requirements with a well-organized meal plan spanning the full day. It provides appropriate protein intake for muscle building, includes specific foods with portions and timing, and maintains a compact, reference-friendly format. Minor mathematical discrepancies between stated and calculated macronutrients exist but don't undermine the practical utility of the plan. The solution directly addresses the task without unnecessary elaboration.</td>
             </tr>
         
             <tr>
-                <td>Testing with a dense technical or scientific passage full of jargon and detailed explanations to evaluate how well the prompt handles domain-specific language and extracts the core finding</td>
-                <td class="prompt-inputs"><strong>passage:</strong> The phosphorylation of tau protein at serine 396 and serine 404 residues by glycogen synthase kinase-3β (GSK-3β) represents a critical post-translational modification that promotes the dissociation of tau from microtubules and facilitates the formation of neurofibrillary tangles, pathological hallmarks of Alzheimer's disease. Recent structural analysis using cryo-electron microscopy has revealed that hyperphosphorylated tau exhibits altered conformational dynamics, reducing its binding affinity to tubulin dimers by approximately 60%, while simultaneously enhancing its propensity to aggregate through β-sheet interactions mediated by the proline-rich regions. These molecular cascades are further exacerbated by the dysregulation of protein phosphatase 2A (PP2A) activity in neurodegenerative conditions, which normally dephosphorylates tau at these residues, thereby creating a pathological feedback loop that accelerates neuronal degeneration and cognitive decline.</td>
-                <td class="criteria">• Reduces the passage to a single sentence<br>• Captures the core finding about tau phosphorylation and its role in neurodegeneration<br>• Handles technical jargon appropriately without oversimplifying the scientific content<br>• Maintains accuracy regarding the relationship between phosphorylation, microtubule dissociation, and disease pathology</td>
-                <td class="output"><pre>GSK-3β-mediated phosphorylation of tau protein causes its detachment from microtubules and aggregation into neurofibrillary tangles, a key pathological process in Alzheimer's disease that is amplified by dysregulated phosphatase activity.</pre></td>
-                <td class="score-col"><span class="score score-medium">7</span></td>
-                <td class="reasoning">The solution meets all mandatory criteria: it is a single sentence, captures the core finding about tau phosphorylation and neurodegeneration, handles technical jargon appropriately, and maintains accuracy about the phosphorylation-microtubule-disease relationship. However, it omits some important details from the original passage (specific residues, cryo-EM findings, feedback loop mechanism) that a rigorous summary might reasonably include. The solution prioritizes conciseness over comprehensiveness, which is appropriate for a summary task, but results in loss of some scientific specificity present in the source material.</td>
+                <td>Testing with an endurance athlete (marathon runner) needing carbohydrate-loading strategies and sustained energy throughout the day</td>
+                <td class="prompt-inputs"><strong>height:</strong> 180 cm<br><strong>weight:</strong> 72 kg<br><strong>goal:</strong> Marathon endurance training with carbohydrate-loading for sustained energy<br><strong>restrictions:</strong> None</td>
+                <td class="criteria">• Meal plan includes 5-6 meals/snacks distributed throughout the day to maintain sustained energy<br>• Carbohydrates comprise 55-65% of total calories with emphasis on complex carbs and timing around training<br>• Plan is compact and concise (fits on one page or brief format)<br>• Includes specific food examples and approximate meal timing for a marathon runner</td>
+                <td class="output"><pre># One-Day Meal Plan for Marathon Endurance Training
+
+Here is a one-day meal plan for an athlete aiming to build endurance for marathon training with strategic carbohydrate-loading:
+
+* **Calorie Target:** Approximately 3,200 calories
+* **Macronutrient Breakdown:** Protein (140g), Fat (85g), Carbs (480g)
+
+## Meal Plan:
+
+* **Breakfast (7:00 AM):** Oatmeal (100g dry weight) with honey (30g), banana (150g), and whole milk (250ml). Side of whole wheat toast (50g) with almond butter (20g).
+  * Protein: 18g, Fat: 12g, Carbs: 95g
+
+* **Mid-Morning Snack (10:00 AM):** Energy bar (65g) with dates (80g) and water.
+  * Protein: 8g, Fat: 6g, Carbs: 65g
+
+* **Lunch (1:00 PM):** Grilled chicken breast (150g), brown rice (120g cooked), steamed sweet potato (200g), and mixed vegetables (100g) with olive oil (15ml).
+  * Protein: 45g, Fat: 10g, Carbs: 85g
+
+* **Afternoon Snack (3:30 PM):** Sports drink (500ml) with a rice cake (30g) and peanut butter (20g).
+  * Protein: 8g, Fat: 10g, Carbs: 60g
+
+* **Pre-Dinner Snack (5:30 PM):** Greek yogurt (200g, non-fat) with granola (40g) and berries (100g).
+  * Protein: 20g, Fat: 5g, Carbs: 60g
+
+* **Dinner (7:00 PM):** Lean ground turkey (160g), pasta (100g dry weight) with marinara sauce (150g), and roasted zucchini (150g) with olive oil (10ml).
+  * Protein: 35g, Fat: 18g, Carbs: 85g
+
+* **Evening Snack (9:30 PM):** Banana (120g) with honey (20g) and a small glass of chocolate milk (200ml).
+  * Protein: 6g, Fat: 24g, Carbs: 50g
+
+This meal plan prioritizes **high-quality carbohydrates** (oats, brown rice, pasta, sweet potatoes) to maximize glycogen storage, includes **lean protein sources** for muscle recovery, and is strategically timed around training to support endurance performance and sustained energy levels throughout the day.</pre></td>
+                <td class="score-col"><span class="score score-high">9</span></td>
+                <td class="reasoning">The solution comprehensively meets all mandatory requirements with precise daily caloric total, detailed macronutrient breakdown, and specific meals with exact portions and timing. It also satisfies all secondary criteria: provides 7 meals/snacks for sustained energy, achieves 60% carbohydrate composition (within the 55-65% target), emphasizes complex carbohydrates appropriately, and maintains a concise, single-page format with specific food examples and timing. The plan is well-designed for a marathon runner's needs. Minor weaknesses include lack of training timing context and a potential calculation error in the evening snack, but these do not violate mandatory requirements.</td>
             </tr>
         
             <tr>
-                <td>Testing with a historical or biographical passage describing events across time periods to assess the prompt's ability to identify and prioritize the most significant information from chronological or causal narratives</td>
-                <td class="prompt-inputs"><strong>passage:</strong> Born in 1879 in Austria, Sigmund Freud initially studied medicine before becoming fascinated by the human mind in the 1880s. Throughout the 1890s, he developed his early theories of hysteria and the unconscious mind, publishing groundbreaking work in 1900 with 'The Interpretation of Dreams.' By the 1920s, Freud had established psychoanalysis as a major intellectual movement, though his theories faced increasing criticism from the 1930s onward. He fled Nazi Austria in 1938 and spent his final years in London, where he died in 1939, leaving behind a legacy that fundamentally transformed psychology and influenced culture for decades to come.</td>
-                <td class="criteria">• Captures Freud's primary contribution to psychology or intellectual history<br>• Identifies the most significant period or achievement from the chronological narrative<br>• Expressed as a single, grammatically complete sentence</td>
-                <td class="output"><pre>Sigmund Freud, an Austrian physician born in 1879, pioneered psychoanalysis through groundbreaking theories on the unconscious mind before fleeing Nazi Austria and dying in London in 1939, leaving a lasting impact on psychology and culture.</pre></td>
+                <td>Testing with a weight-class sport athlete (boxer/wrestler) requiring calorie control while maintaining performance and energy levels</td>
+                <td class="prompt-inputs"><strong>height:</strong> 178 cm<br><strong>weight:</strong> 75 kg<br><strong>goal:</strong> maintain weight while preserving strength and energy for training<br><strong>restrictions:</strong> no dairy due to lactose intolerance</td>
+                <td class="criteria">• Meal plan totals approximately 2,200-2,400 calories for weight maintenance in a weight-class sport<br>• Includes 4-5 meals distributed throughout the day to maintain energy and performance<br>• Provides adequate protein (minimum 120g) for muscle preservation without dairy products<br>• All meals are practical and can be prepared/consumed on a typical training day</td>
+                <td class="output"><pre># One-Day Meal Plan for Lactose-Intolerant Athlete
+
+Here is a one-day meal plan for an athlete aiming to maintain weight while preserving strength and energy for training:
+
+* **Calorie Target:** Approximately 2,550 calories
+* **Macronutrient Breakdown:** Protein (145g), Fat (75g), Carbs (330g)
+
+## Meal Plan:
+
+* **Breakfast (7:00 AM):** Oatmeal (80g dry weight) with banana (120g), almond butter (25g), and coconut milk (240ml, unsweetened).
+    * Protein: 12g, Fat: 14g, Carbs: 65g
+
+* **Mid-Morning Snack (10:00 AM):** Rice cakes (40g) with peanut butter (30g) and honey (15g).
+    * Protein: 9g, Fat: 16g, Carbs: 35g
+
+* **Lunch (1:00 PM):** Grilled chicken breast (150g) with brown rice (90g cooked weight), steamed broccoli (200g), and olive oil drizzle (10ml).
+    * Protein: 42g, Fat: 12g, Carbs: 55g
+
+* **Afternoon Snack (4:00 PM):** Apple (180g) with mixed nuts (30g: almonds, cashews, walnuts).
+    * Protein: 8g, Fat: 16g, Carbs: 32g
+
+* **Dinner (7:00 PM):** Baked salmon (160g) with sweet potato (200g) and mixed vegetables (100g carrots, 100g green beans) sautéed in olive oil (10ml).
+    * Protein: 38g, Fat: 12g, Carbs: 65g
+
+* **Evening Snack (9:30 PM):** Homemade smoothie with coconut milk (200ml), spinach (50g), mango (100g), and hemp seeds (15g).
+    * Protein: 8g, Fat: 5g, Carbs: 20g
+
+**Key Features:**
+This meal plan prioritizes lean protein sources, complex carbohydrates, and healthy fats while eliminating all dairy products. All foods are lactose-free and budget-friendly, with emphasis on whole foods that support athletic performance and muscle maintenance.</pre></td>
                 <td class="score-col"><span class="score score-medium">7</span></td>
-                <td class="reasoning">The solution successfully meets all mandatory requirements: it identifies Freud's primary contribution to psychology (psychoanalysis and unconscious mind theories), captures significant periods from the chronological narrative (birth, Nazi Austria, death in London), and is expressed as a single, grammatically correct sentence. However, it has a notable secondary deficiency in omitting 'The Interpretation of Dreams' (1900), which the original passage explicitly highlights as a groundbreaking work. This represents a meaningful gap in capturing the most significant achievement from the narrative. The solution is competent but not optimal in its selection of which details to prioritize.</td>
+                <td class="reasoning">The solution meets all three mandatory requirements with clear presentation of daily totals, macronutrient breakdown, and detailed meals with portions and timing. However, it violates a secondary criterion by exceeding the 2,200-2,400 calorie target range specified in the criteria. The 2,550-calorie plan is approximately 6% above the upper limit, which for weight maintenance could result in gradual weight gain rather than maintenance. While the meal plan is well-constructed, practical, and addresses all restrictions, this caloric overage represents a meaningful deviation from the stated goal of weight maintenance. The inclusion of 6 meals (vs. 4-5 recommended) is a minor issue given the practical nature of the plan.</td>
             </tr>
         
             </tbody>

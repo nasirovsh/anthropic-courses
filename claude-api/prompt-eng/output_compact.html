@@ -1,0 +1,173 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Prompt Evaluation Report</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                line-height: 1.6;
+                margin: 0;
+                padding: 20px;
+                color: #333;
+            }
+            .header {
+                background-color: #f0f0f0;
+                padding: 20px;
+                border-radius: 5px;
+                margin-bottom: 20px;
+            }
+            .summary-stats {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+            .stat-box {
+                background-color: #fff;
+                border-radius: 5px;
+                padding: 15px;
+                box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+                flex-basis: 30%;
+                min-width: 200px;
+            }
+            .stat-value {
+                font-size: 24px;
+                font-weight: bold;
+                margin-top: 5px;
+            }
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-top: 20px;
+            }
+            th {
+                background-color: #4a4a4a;
+                color: white;
+                text-align: left;
+                padding: 12px;
+            }
+            td {
+                padding: 10px;
+                border-bottom: 1px solid #ddd;
+                vertical-align: top;
+            }
+            tr:nth-child(even) {
+                background-color: #f9f9f9;
+            }
+            .output-cell {
+                white-space: pre-wrap;
+            }
+            .score {
+                font-weight: bold;
+                padding: 5px 10px;
+                border-radius: 3px;
+                display: inline-block;
+            }
+            .score-high {
+                background-color: #c8e6c9;
+                color: #2e7d32;
+            }
+            .score-medium {
+                background-color: #fff9c4;
+                color: #f57f17;
+            }
+            .score-low {
+                background-color: #ffcdd2;
+                color: #c62828;
+            }
+            .output {
+                overflow: auto;
+                white-space: pre-wrap;
+            }
+
+            .output pre {
+                background-color: #f5f5f5;
+                border: 1px solid #ddd;
+                border-radius: 4px;
+                padding: 10px;
+                margin: 0;
+                font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+                font-size: 14px;
+                line-height: 1.4;
+                color: #333;
+                box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+                overflow-x: auto;
+                white-space: pre-wrap; 
+                word-wrap: break-word; 
+            }
+
+            td {
+                width: 20%;
+            }
+            .score-col {
+                width: 80px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Prompt Evaluation Report</h1>
+            <div class="summary-stats">
+                <div class="stat-box">
+                    <div>Total Test Cases</div>
+                    <div class="stat-value">3</div>
+                </div>
+                <div class="stat-box">
+                    <div>Average Score</div>
+                    <div class="stat-value">8.0 / 10</div>
+                </div>
+                <div class="stat-box">
+                    <div>Pass Rate (≥7)</div>
+                    <div class="stat-value">100.0%</div>
+                </div>
+            </div>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Scenario</th>
+                    <th>Prompt Inputs</th>
+                    <th>Solution Criteria</th>
+                    <th>Output</th>
+                    <th>Score</th>
+                    <th>Reasoning</th>
+                </tr>
+            </thead>
+            <tbody>
+    
+            <tr>
+                <td>Testing with a multi-paragraph narrative passage containing multiple characters and plot points to verify the prompt can distill complex storytelling into one essential sentence</td>
+                <td class="prompt-inputs"><strong>passage:</strong> Maya had always dreamed of opening her own bookstore, but years of working corporate jobs left her exhausted and unfulfilled. One autumn, she finally took the leap, converting an old warehouse into a cozy reading space filled with vintage shelves and warm lighting. Her childhood friend James, a graphic designer, offered to help rebrand her vision, creating a logo that captured the magic of discovery. Within months, the bookstore became a community hub where locals gathered for author readings, book clubs, and quiet afternoons lost in stories. Though the first year was financially challenging and required countless sleepless nights of inventory management and marketing, Maya's perseverance paid off when a local newspaper featured her shop as 'the heart of the neighborhood.' By year two, the bookstore was thriving, and Maya finally felt the sense of purpose that had eluded her in her previous career.</td>
+                <td class="criteria">• Captures the main arc: Maya's transition from corporate work to opening a successful bookstore<br>• Expressed as a single, concise sentence<br>• Distills the essential narrative without losing the core story progression<br>• Omits secondary details like James's role, specific challenges, or timeline specifics</td>
+                <td class="output"><pre>Maya fulfilled her long-held dream of opening a bookstore that became a thriving community hub, finally finding the purpose her corporate career never provided.</pre></td>
+                <td class="score-col"><span class="score score-high">10</span></td>
+                <td class="reasoning">The solution meets all mandatory requirements with precision. It is a single sentence that captures Maya's transition from corporate work to opening a successful bookstore. It distills the essential narrative arc (unfulfilled corporate worker → takes leap → builds thriving community space → finds purpose) without unnecessary details. The sentence is concise, clear, and maintains the core story progression. The solution demonstrates excellent judgment in what to include and exclude, making it an exemplary summary that fulfills the task completely.</td>
+            </tr>
+        
+            <tr>
+                <td>Testing with a dense technical or scientific passage full of jargon and detailed explanations to evaluate how well the prompt handles domain-specific language and extracts the core finding</td>
+                <td class="prompt-inputs"><strong>passage:</strong> The phosphorylation of tau protein at serine 396 and serine 404 residues by glycogen synthase kinase-3β (GSK-3β) represents a critical post-translational modification that promotes the dissociation of tau from microtubules and facilitates the formation of neurofibrillary tangles, pathological hallmarks of Alzheimer's disease. Recent structural analysis using cryo-electron microscopy has revealed that hyperphosphorylated tau exhibits altered conformational dynamics, reducing its binding affinity to tubulin dimers by approximately 60%, while simultaneously enhancing its propensity to aggregate through β-sheet interactions mediated by the proline-rich regions. These molecular cascades are further exacerbated by the dysregulation of protein phosphatase 2A (PP2A) activity in neurodegenerative conditions, which normally dephosphorylates tau at these residues, thereby creating a pathological feedback loop that accelerates neuronal degeneration and cognitive decline.</td>
+                <td class="criteria">• Reduces the passage to a single sentence<br>• Captures the core finding about tau phosphorylation and its role in neurodegeneration<br>• Handles technical jargon appropriately without oversimplifying the scientific content<br>• Maintains accuracy regarding the relationship between phosphorylation, microtubule dissociation, and disease pathology</td>
+                <td class="output"><pre>GSK-3β-mediated phosphorylation of tau protein causes its detachment from microtubules and aggregation into neurofibrillary tangles, a key pathological process in Alzheimer's disease that is amplified by dysregulated phosphatase activity.</pre></td>
+                <td class="score-col"><span class="score score-medium">7</span></td>
+                <td class="reasoning">The solution meets all mandatory criteria: it is a single sentence, captures the core finding about tau phosphorylation and neurodegeneration, handles technical jargon appropriately, and maintains accuracy about the phosphorylation-microtubule-disease relationship. However, it omits some important details from the original passage (specific residues, cryo-EM findings, feedback loop mechanism) that a rigorous summary might reasonably include. The solution prioritizes conciseness over comprehensiveness, which is appropriate for a summary task, but results in loss of some scientific specificity present in the source material.</td>
+            </tr>
+        
+            <tr>
+                <td>Testing with a historical or biographical passage describing events across time periods to assess the prompt's ability to identify and prioritize the most significant information from chronological or causal narratives</td>
+                <td class="prompt-inputs"><strong>passage:</strong> Born in 1879 in Austria, Sigmund Freud initially studied medicine before becoming fascinated by the human mind in the 1880s. Throughout the 1890s, he developed his early theories of hysteria and the unconscious mind, publishing groundbreaking work in 1900 with 'The Interpretation of Dreams.' By the 1920s, Freud had established psychoanalysis as a major intellectual movement, though his theories faced increasing criticism from the 1930s onward. He fled Nazi Austria in 1938 and spent his final years in London, where he died in 1939, leaving behind a legacy that fundamentally transformed psychology and influenced culture for decades to come.</td>
+                <td class="criteria">• Captures Freud's primary contribution to psychology or intellectual history<br>• Identifies the most significant period or achievement from the chronological narrative<br>• Expressed as a single, grammatically complete sentence</td>
+                <td class="output"><pre>Sigmund Freud, an Austrian physician born in 1879, pioneered psychoanalysis through groundbreaking theories on the unconscious mind before fleeing Nazi Austria and dying in London in 1939, leaving a lasting impact on psychology and culture.</pre></td>
+                <td class="score-col"><span class="score score-medium">7</span></td>
+                <td class="reasoning">The solution successfully meets all mandatory requirements: it identifies Freud's primary contribution to psychology (psychoanalysis and unconscious mind theories), captures significant periods from the chronological narrative (birth, Nazi Austria, death in London), and is expressed as a single, grammatically correct sentence. However, it has a notable secondary deficiency in omitting 'The Interpretation of Dreams' (1900), which the original passage explicitly highlights as a groundbreaking work. This represents a meaningful gap in capturing the most significant achievement from the narrative. The solution is competent but not optimal in its selection of which details to prioritize.</td>
+            </tr>
+        
+            </tbody>
+        </table>
+    </body>
+    </html>
+    

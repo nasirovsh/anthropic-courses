@@ -1,40 +1,50 @@
 [
   {
     "prompt_inputs": {
-      "passage": "Maya had always dreamed of opening her own bookstore, but years of working corporate jobs left her exhausted and unfulfilled. One autumn, she finally took the leap, converting an old warehouse into a cozy reading space filled with vintage shelves and warm lighting. Her childhood friend James, a graphic designer, offered to help rebrand her vision, creating a logo that captured the magic of discovery. Within months, the bookstore became a community hub where locals gathered for author readings, book clubs, and quiet afternoons lost in stories. Though the first year was financially challenging and required countless sleepless nights of inventory management and marketing, Maya's perseverance paid off when a local newspaper featured her shop as 'the heart of the neighborhood.' By year two, the bookstore was thriving, and Maya finally felt the sense of purpose that had eluded her in her previous career."
+      "height": "180 cm",
+      "weight": "85 kg",
+      "goal": "muscle gain with strength training",
+      "restrictions": "none"
     },
     "solution_criteria": [
-      "Captures the main arc: Maya's transition from corporate work to opening a successful bookstore",
-      "Expressed as a single, concise sentence",
-      "Distills the essential narrative without losing the core story progression",
-      "Omits secondary details like James's role, specific challenges, or timeline specifics"
+      "Meal plan covers all meals for one day (breakfast, lunch, dinner, and snacks)",
+      "Provides high protein intake (minimum 1.6g per kg of body weight)",
+      "Includes specific foods with approximate macronutrient composition for each meal",
+      "Plan is compact and concise (suitable for quick reference)"
     ],
-    "task_description": "Summarize a passage of text into a single concise sentence",
-    "scenario": "Testing with a multi-paragraph narrative passage containing multiple characters and plot points to verify the prompt can distill complex storytelling into one essential sentence"
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": "Testing with a strength-training athlete requiring high protein intake and specific macronutrient ratios for muscle recovery"
   },
   {
     "prompt_inputs": {
-      "passage": "The phosphorylation of tau protein at serine 396 and serine 404 residues by glycogen synthase kinase-3\u03b2 (GSK-3\u03b2) represents a critical post-translational modification that promotes the dissociation of tau from microtubules and facilitates the formation of neurofibrillary tangles, pathological hallmarks of Alzheimer's disease. Recent structural analysis using cryo-electron microscopy has revealed that hyperphosphorylated tau exhibits altered conformational dynamics, reducing its binding affinity to tubulin dimers by approximately 60%, while simultaneously enhancing its propensity to aggregate through \u03b2-sheet interactions mediated by the proline-rich regions. These molecular cascades are further exacerbated by the dysregulation of protein phosphatase 2A (PP2A) activity in neurodegenerative conditions, which normally dephosphorylates tau at these residues, thereby creating a pathological feedback loop that accelerates neuronal degeneration and cognitive decline."
+      "height": "180 cm",
+      "weight": "72 kg",
+      "goal": "Marathon endurance training with carbohydrate-loading for sustained energy",
+      "restrictions": "None"
     },
     "solution_criteria": [
-      "Reduces the passage to a single sentence",
-      "Captures the core finding about tau phosphorylation and its role in neurodegeneration",
-      "Handles technical jargon appropriately without oversimplifying the scientific content",
-      "Maintains accuracy regarding the relationship between phosphorylation, microtubule dissociation, and disease pathology"
+      "Meal plan includes 5-6 meals/snacks distributed throughout the day to maintain sustained energy",
+      "Carbohydrates comprise 55-65% of total calories with emphasis on complex carbs and timing around training",
+      "Plan is compact and concise (fits on one page or brief format)",
+      "Includes specific food examples and approximate meal timing for a marathon runner"
     ],
-    "task_description": "Summarize a passage of text into a single concise sentence",
-    "scenario": "Testing with a dense technical or scientific passage full of jargon and detailed explanations to evaluate how well the prompt handles domain-specific language and extracts the core finding"
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": "Testing with an endurance athlete (marathon runner) needing carbohydrate-loading strategies and sustained energy throughout the day"
   },
   {
     "prompt_inputs": {
-      "passage": "Born in 1879 in Austria, Sigmund Freud initially studied medicine before becoming fascinated by the human mind in the 1880s. Throughout the 1890s, he developed his early theories of hysteria and the unconscious mind, publishing groundbreaking work in 1900 with 'The Interpretation of Dreams.' By the 1920s, Freud had established psychoanalysis as a major intellectual movement, though his theories faced increasing criticism from the 1930s onward. He fled Nazi Austria in 1938 and spent his final years in London, where he died in 1939, leaving behind a legacy that fundamentally transformed psychology and influenced culture for decades to come."
+      "height": "178 cm",
+      "weight": "75 kg",
+      "goal": "maintain weight while preserving strength and energy for training",
+      "restrictions": "no dairy due to lactose intolerance"
     },
     "solution_criteria": [
-      "Captures Freud's primary contribution to psychology or intellectual history",
-      "Identifies the most significant period or achievement from the chronological narrative",
-      "Expressed as a single, grammatically complete sentence"
+      "Meal plan totals approximately 2,200-2,400 calories for weight maintenance in a weight-class sport",
+      "Includes 4-5 meals distributed throughout the day to maintain energy and performance",
+      "Provides adequate protein (minimum 120g) for muscle preservation without dairy products",
+      "All meals are practical and can be prepared/consumed on a typical training day"
     ],
-    "task_description": "Summarize a passage of text into a single concise sentence",
-    "scenario": "Testing with a historical or biographical passage describing events across time periods to assess the prompt's ability to identify and prioritize the most significant information from chronological or causal narratives"
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": "Testing with a weight-class sport athlete (boxer/wrestler) requiring calorie control while maintaining performance and energy levels"
   }
 ]
