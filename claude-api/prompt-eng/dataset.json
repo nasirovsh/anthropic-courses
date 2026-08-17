@@ -1,0 +1,40 @@
+[
+  {
+    "prompt_inputs": {
+      "passage": "Maya had always dreamed of opening her own bookstore, but years of working corporate jobs left her exhausted and unfulfilled. One autumn, she finally took the leap, converting an old warehouse into a cozy reading space filled with vintage shelves and warm lighting. Her childhood friend James, a graphic designer, offered to help rebrand her vision, creating a logo that captured the magic of discovery. Within months, the bookstore became a community hub where locals gathered for author readings, book clubs, and quiet afternoons lost in stories. Though the first year was financially challenging and required countless sleepless nights of inventory management and marketing, Maya's perseverance paid off when a local newspaper featured her shop as 'the heart of the neighborhood.' By year two, the bookstore was thriving, and Maya finally felt the sense of purpose that had eluded her in her previous career."
+    },
+    "solution_criteria": [
+      "Captures the main arc: Maya's transition from corporate work to opening a successful bookstore",
+      "Expressed as a single, concise sentence",
+      "Distills the essential narrative without losing the core story progression",
+      "Omits secondary details like James's role, specific challenges, or timeline specifics"
+    ],
+    "task_description": "Summarize a passage of text into a single concise sentence",
+    "scenario": "Testing with a multi-paragraph narrative passage containing multiple characters and plot points to verify the prompt can distill complex storytelling into one essential sentence"
+  },
+  {
+    "prompt_inputs": {
+      "passage": "The phosphorylation of tau protein at serine 396 and serine 404 residues by glycogen synthase kinase-3\u03b2 (GSK-3\u03b2) represents a critical post-translational modification that promotes the dissociation of tau from microtubules and facilitates the formation of neurofibrillary tangles, pathological hallmarks of Alzheimer's disease. Recent structural analysis using cryo-electron microscopy has revealed that hyperphosphorylated tau exhibits altered conformational dynamics, reducing its binding affinity to tubulin dimers by approximately 60%, while simultaneously enhancing its propensity to aggregate through \u03b2-sheet interactions mediated by the proline-rich regions. These molecular cascades are further exacerbated by the dysregulation of protein phosphatase 2A (PP2A) activity in neurodegenerative conditions, which normally dephosphorylates tau at these residues, thereby creating a pathological feedback loop that accelerates neuronal degeneration and cognitive decline."
+    },
+    "solution_criteria": [
+      "Reduces the passage to a single sentence",
+      "Captures the core finding about tau phosphorylation and its role in neurodegeneration",
+      "Handles technical jargon appropriately without oversimplifying the scientific content",
+      "Maintains accuracy regarding the relationship between phosphorylation, microtubule dissociation, and disease pathology"
+    ],
+    "task_description": "Summarize a passage of text into a single concise sentence",
+    "scenario": "Testing with a dense technical or scientific passage full of jargon and detailed explanations to evaluate how well the prompt handles domain-specific language and extracts the core finding"
+  },
+  {
+    "prompt_inputs": {
+      "passage": "Born in 1879 in Austria, Sigmund Freud initially studied medicine before becoming fascinated by the human mind in the 1880s. Throughout the 1890s, he developed his early theories of hysteria and the unconscious mind, publishing groundbreaking work in 1900 with 'The Interpretation of Dreams.' By the 1920s, Freud had established psychoanalysis as a major intellectual movement, though his theories faced increasing criticism from the 1930s onward. He fled Nazi Austria in 1938 and spent his final years in London, where he died in 1939, leaving behind a legacy that fundamentally transformed psychology and influenced culture for decades to come."
+    },
+    "solution_criteria": [
+      "Captures Freud's primary contribution to psychology or intellectual history",
+      "Identifies the most significant period or achievement from the chronological narrative",
+      "Expressed as a single, grammatically complete sentence"
+    ],
+    "task_description": "Summarize a passage of text into a single concise sentence",
+    "scenario": "Testing with a historical or biographical passage describing events across time periods to assess the prompt's ability to identify and prioritize the most significant information from chronological or causal narratives"
+  }
+]

@@ -8,7 +8,15 @@
       "Bash(jupyter kernelspec *)",
       "Bash(python3 -c ' *)",
       "Skill(claude-api)",
-      "Skill(claude-api:*)"
+      "Skill(claude-api:*)",
+      "Bash(jupyter nbconvert *)",
+      "Bash(pip3 show *)",
+      "Bash(.venv/bin/python -c ' *)",
+      "Bash(/Users/shavkat_nasirov/Documents/Personal/Projects/anthropic-courses/claude-api/.venv/bin/python -c ' *)",
+      "Bash(cd /Users/shavkat_nasirov/Documents/Personal/Projects/anthropic-courses/claude-api/prompt-eng && rm -f dataset.json output.json output.html)"
+    ],
+    "additionalDirectories": [
+      "/Users/shavkat_nasirov/Documents/Personal/Projects/anthropic-courses/claude-api/prompt-eng"
     ]
   }
 }

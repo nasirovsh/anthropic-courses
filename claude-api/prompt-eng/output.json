@@ -1,0 +1,55 @@
+[
+  {
+    "output": "Maya fulfilled her long-held dream of opening a bookstore that became a thriving community hub, finally finding the purpose her corporate career never provided.",
+    "test_case": {
+      "prompt_inputs": {
+        "passage": "Maya had always dreamed of opening her own bookstore, but years of working corporate jobs left her exhausted and unfulfilled. One autumn, she finally took the leap, converting an old warehouse into a cozy reading space filled with vintage shelves and warm lighting. Her childhood friend James, a graphic designer, offered to help rebrand her vision, creating a logo that captured the magic of discovery. Within months, the bookstore became a community hub where locals gathered for author readings, book clubs, and quiet afternoons lost in stories. Though the first year was financially challenging and required countless sleepless nights of inventory management and marketing, Maya's perseverance paid off when a local newspaper featured her shop as 'the heart of the neighborhood.' By year two, the bookstore was thriving, and Maya finally felt the sense of purpose that had eluded her in her previous career."
+      },
+      "solution_criteria": [
+        "Captures the main arc: Maya's transition from corporate work to opening a successful bookstore",
+        "Expressed as a single, concise sentence",
+        "Distills the essential narrative without losing the core story progression",
+        "Omits secondary details like James's role, specific challenges, or timeline specifics"
+      ],
+      "task_description": "Summarize a passage of text into a single concise sentence",
+      "scenario": "Testing with a multi-paragraph narrative passage containing multiple characters and plot points to verify the prompt can distill complex storytelling into one essential sentence"
+    },
+    "score": 10,
+    "reasoning": "The solution meets all mandatory requirements with precision. It is a single sentence that captures Maya's transition from corporate work to opening a successful bookstore. It distills the essential narrative arc (unfulfilled corporate worker \u2192 takes leap \u2192 builds thriving community space \u2192 finds purpose) without unnecessary details. The sentence is concise, clear, and maintains the core story progression. The solution demonstrates excellent judgment in what to include and exclude, making it an exemplary summary that fulfills the task completely."
+  },
+  {
+    "output": "GSK-3\u03b2-mediated phosphorylation of tau protein causes its detachment from microtubules and aggregation into neurofibrillary tangles, a key pathological process in Alzheimer's disease that is amplified by dysregulated phosphatase activity.",
+    "test_case": {
+      "prompt_inputs": {
+        "passage": "The phosphorylation of tau protein at serine 396 and serine 404 residues by glycogen synthase kinase-3\u03b2 (GSK-3\u03b2) represents a critical post-translational modification that promotes the dissociation of tau from microtubules and facilitates the formation of neurofibrillary tangles, pathological hallmarks of Alzheimer's disease. Recent structural analysis using cryo-electron microscopy has revealed that hyperphosphorylated tau exhibits altered conformational dynamics, reducing its binding affinity to tubulin dimers by approximately 60%, while simultaneously enhancing its propensity to aggregate through \u03b2-sheet interactions mediated by the proline-rich regions. These molecular cascades are further exacerbated by the dysregulation of protein phosphatase 2A (PP2A) activity in neurodegenerative conditions, which normally dephosphorylates tau at these residues, thereby creating a pathological feedback loop that accelerates neuronal degeneration and cognitive decline."
+      },
+      "solution_criteria": [
+        "Reduces the passage to a single sentence",
+        "Captures the core finding about tau phosphorylation and its role in neurodegeneration",
+        "Handles technical jargon appropriately without oversimplifying the scientific content",
+        "Maintains accuracy regarding the relationship between phosphorylation, microtubule dissociation, and disease pathology"
+      ],
+      "task_description": "Summarize a passage of text into a single concise sentence",
+      "scenario": "Testing with a dense technical or scientific passage full of jargon and detailed explanations to evaluate how well the prompt handles domain-specific language and extracts the core finding"
+    },
+    "score": 7,
+    "reasoning": "The solution meets all mandatory criteria: it is a single sentence, captures the core finding about tau phosphorylation and neurodegeneration, handles technical jargon appropriately, and maintains accuracy about the phosphorylation-microtubule-disease relationship. However, it omits some important details from the original passage (specific residues, cryo-EM findings, feedback loop mechanism) that a rigorous summary might reasonably include. The solution prioritizes conciseness over comprehensiveness, which is appropriate for a summary task, but results in loss of some scientific specificity present in the source material."
+  },
+  {
+    "output": "Sigmund Freud, an Austrian physician born in 1879, pioneered psychoanalysis through groundbreaking theories on the unconscious mind before fleeing Nazi Austria and dying in London in 1939, leaving a lasting impact on psychology and culture.",
+    "test_case": {
+      "prompt_inputs": {
+        "passage": "Born in 1879 in Austria, Sigmund Freud initially studied medicine before becoming fascinated by the human mind in the 1880s. Throughout the 1890s, he developed his early theories of hysteria and the unconscious mind, publishing groundbreaking work in 1900 with 'The Interpretation of Dreams.' By the 1920s, Freud had established psychoanalysis as a major intellectual movement, though his theories faced increasing criticism from the 1930s onward. He fled Nazi Austria in 1938 and spent his final years in London, where he died in 1939, leaving behind a legacy that fundamentally transformed psychology and influenced culture for decades to come."
+      },
+      "solution_criteria": [
+        "Captures Freud's primary contribution to psychology or intellectual history",
+        "Identifies the most significant period or achievement from the chronological narrative",
+        "Expressed as a single, grammatically complete sentence"
+      ],
+      "task_description": "Summarize a passage of text into a single concise sentence",
+      "scenario": "Testing with a historical or biographical passage describing events across time periods to assess the prompt's ability to identify and prioritize the most significant information from chronological or causal narratives"
+    },
+    "score": 7,
+    "reasoning": "The solution successfully meets all mandatory requirements: it identifies Freud's primary contribution to psychology (psychoanalysis and unconscious mind theories), captures significant periods from the chronological narrative (birth, Nazi Austria, death in London), and is expressed as a single, grammatically correct sentence. However, it has a notable secondary deficiency in omitting 'The Interpretation of Dreams' (1900), which the original passage explicitly highlights as a groundbreaking work. This represents a meaningful gap in capturing the most significant achievement from the narrative. The solution is competent but not optimal in its selection of which details to prioritize."
+  }
+]
